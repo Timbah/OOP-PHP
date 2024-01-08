@@ -10,7 +10,7 @@
 
         return self::$availableColors;
     }
-
+ 
  }
 
  $myCar = new Car3();

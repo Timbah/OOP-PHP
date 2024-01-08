@@ -27,6 +27,11 @@ class Person{
 
     }
 
+    public static function __callStatic($name, $arguments)
+    {
+        echo $name . ' static method was called';
+    }
+
     public function __set($PropName, $value){
 
         if($PropName == 'username'){
@@ -59,5 +64,6 @@ echo $myP -> name;
 $myP -> setPhone(987055);
 echo $myP -> getMobilePhone();
 
+$myP :: hello();
  
 ?>
